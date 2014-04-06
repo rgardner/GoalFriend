@@ -30,6 +30,10 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+   
+    UIImageView *tempImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    [tempImg setImage:[UIImage imageNamed:@"goldstar"]];
+    [self.tableView setBackgroundView:tempImg];
 }
 
 - (void)didReceiveMemoryWarning
